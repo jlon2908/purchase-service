@@ -1,0 +1,77 @@
+spring:
+  application:
+    name: purchase-service
+
+  flyway:
+    url: jdbc:postgresql://purchase-service.c4b4ogqqybf1.us-east-1.rds.amazonaws.com:5432/purchasedb
+    user: postgres
+    password: LONque123*
+    baseline-on-migrate: true
+    locations: classpath:db/migration
+
+
+
+  rabbitmq:
+    host: b-9c37d3b2-a2d6-4eec-b2ba-9d00caa37773.mq.us-east-1.on.aws
+    port: 5671
+    username: jlondono
+    password: LONque12345*
+    ssl:
+      enabled: true
+
+
+  main:
+    web-application-type: reactive
+
+  jackson:
+    serialization:
+      indent-output: true
+
+server:
+  port: 8086
+
+logging:
+  level:
+    com.stripe: DEBUG
+    org.springframework.amqp: DEBUG
+    org.springframework.amqp.rabbit: DEBUG
+    org.springframework.amqp.rabbit.connection: DEBUG
+    org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer: DEBUG
+    com.rabbitmq: DEBUG
+    org.springframework.security: DEBUG
+    org.springframework.web: DEBUG
+    reactor.netty.http.server: DEBUG
+
+postgresql:
+  host: purchase-service.c4b4ogqqybf1.us-east-1.rds.amazonaws.com
+  port: 5432
+  database: purchasedb
+  schema: public
+  username: postgres
+  password: LONque123*
+  ssl: allow
+
+
+
+
+
+
+
+catalog:
+  base-url: http://arka-alb-1425980331.us-east-1.elb.amazonaws.com
+
+inventory:
+  base-url: http://arka-alb-1425980331.us-east-1.elb.amazonaws.com
+
+cart:
+  base-url: http://arka-alb-1425980331.us-east-1.elb.amazonaws.com
+
+stripe:
+  secret-key: sk_test_51Rb7894GYlsi89829nwyHlVNxUVnyc4Bdrzkszeb8VkjLcieG9S9wtyWyMIKexbfLf5kpEdzUf7JTU4gghGjwwCq00FFg4yFM5
+  webhook-secret: whsec_c119d3c95e8724acedc6679ee1df3dd5982560b1ecb8ba94fee1f0d579c1c5ce
+
+security:
+  jwt:
+    secret: "LONque1234567890LONque1234567890abcd"
+
+
