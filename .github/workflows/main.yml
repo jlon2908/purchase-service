@@ -70,8 +70,10 @@ jobs:
           AWS_REGION: us-east-1
 
       - name: Build and Push Docker image
+        id: docker_push
         run: |
           IMAGE_URL="148761677807.dkr.ecr.us-east-1.amazonaws.com/purchase-service:${{ github.sha }}"
+          echo "image_url=$IMAGE_URL" >> $GITHUB_OUTPUT
           docker build -t $IMAGE_URL .
           docker push $IMAGE_URL
 
