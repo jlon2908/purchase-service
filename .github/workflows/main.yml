@@ -12,8 +12,6 @@ jobs:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_REGION: us-east-1
-    outputs:
-      image_url: ${{ steps.push_image.outputs.image_url }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -48,7 +46,7 @@ jobs:
         env:
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          IMAGE_URL="${{ secrets.ECR_REGISTRY }}/${{ secrets.ECR_REPOSITORY }}:${{ github.sha }}"
+          IMAGE_URL="$ECR_REPOSITORY_URL:${{ github.sha }}"
           docker build -t $IMAGE_URL .
           docker push $IMAGE_URL
           echo "image_url=$IMAGE_URL" >> $GITHUB_OUTPUT
