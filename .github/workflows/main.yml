@@ -67,7 +67,8 @@ jobs:
             -var="db_jdbc_url=dummy" \
             -var="db_password=dummy" \
             -var="db_username=dummy" \
-            -var="jwt_secret=dummy"
+            -var="jwt_secret=dummy" \
+            -var="ecs_cluster_arn=dummy"
 
       - name: Get ECR Repository URL
         id: ecr_output
