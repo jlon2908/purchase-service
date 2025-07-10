@@ -29,7 +29,19 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan -var="container_image=will-be-overwritten"
+        run: |
+          terraform plan \
+            -var="vpc_id=${{ secrets.VPC_ID }}" \
+            -var="security_group_id=${{ secrets.SECURITY_GROUP_ID }}" \
+            -var='subnet_ids=["subnet-057a322f484b9f962","subnet-09ee219f4838cb06f"]' \
+            -var="target_group_arn=${{ secrets.TARGETGROUP }}" \
+            -var="ecs_cluster_arn=arn:aws:ecs:us-east-1:148761677807:cluster/arka-ecs-cluster" \
+            -var="container_image=will-be-overwritten" \
+            -var="db_host=${{ secrets.DB_HOST }}" \
+            -var="db_jdbc_url=${{ secrets.DB_JDBC_URL }}" \
+            -var="db_password=${{ secrets.DB_PASSWORD }}" \
+            -var="db_username=${{ secrets.DB_USERNAME }}" \
+            -var="jwt_secret=${{ secrets.JWT_SECRET }}"
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
@@ -98,3 +110,12 @@ jobs:
         env:
           IMAGE_TAG: ${{ github.sha }}
         run: |
+          docker push $ECR_REPOSITORY_URL:${{ github.sha }}
+
+      - name: Update ECS service with new image
+        run: |
+          aws ecs update-service \
+            --cluster arka-ecs-cluster \
+            --service purchase-service \
+            --force-new-deployment \
+            --region us-east-1
