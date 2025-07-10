@@ -68,7 +68,11 @@ jobs:
             -var="db_password=dummy" \
             -var="db_username=dummy" \
             -var="jwt_secret=dummy" \
-            -var="ecs_cluster_arn=dummy"
+            -var="ecs_cluster_arn=dummy" \
+            -var="security_group_id=dummy" \
+            -var="vpc_id=dummy" \
+            -var="target_group_arn=dummy" \
+            -var='subnet_ids=["dummy1","dummy2"]'
 
       - name: Get ECR Repository URL
         id: ecr_output
