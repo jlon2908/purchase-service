@@ -42,11 +42,8 @@ jobs:
           AWS_REGION: us-east-1
 
       - name: Build and Push Docker image
-        id: push_image
-        env:
-          IMAGE_TAG: ${{ github.sha }}
         run: |
-          IMAGE_URL="$ECR_REPOSITORY_URL:${{ github.sha }}"
+          IMAGE_URL="${{ needs.terraform.outputs.ecr_repository_url }}:${{ github.sha }}"
           docker build -t $IMAGE_URL .
           docker push $IMAGE_URL
           echo "image_url=$IMAGE_URL" >> $GITHUB_OUTPUT
