@@ -29,7 +29,7 @@ jobs:
         run: terraform init
 
       - name: Terraform Plan
-        run: terraform plan
+        run: terraform plan -var="container_image=will-be-overwritten"
 
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main'
@@ -98,4 +98,3 @@ jobs:
         env:
           IMAGE_TAG: ${{ github.sha }}
         run: |
-          docker push $ECR_REPOSITORY_URL:${{ github.sha }}
