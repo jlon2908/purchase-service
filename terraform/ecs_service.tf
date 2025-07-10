@@ -77,7 +77,7 @@ resource "aws_ecs_service" "purchase_service" {
   load_balancer {
     target_group_arn = var.target_group_arn
     container_name   = "purchase-service"
-    container_port   = 8080
+    container_port   = 8086
   }
   depends_on = [aws_iam_role_policy_attachment.ecs_task_execution_role_policy]
 }
