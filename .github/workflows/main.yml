@@ -60,7 +60,14 @@ jobs:
         run: terraform init
 
       - name: Terraform Apply (ECR only)
-        run: terraform apply -auto-approve -target=aws_ecr_repository.purchase_service -var="container_image=dummy"
+        run: |
+          terraform apply -auto-approve -target=aws_ecr_repository.purchase_service \
+            -var="container_image=dummy" \
+            -var="db_host=dummy" \
+            -var="db_jdbc_url=dummy" \
+            -var="db_password=dummy" \
+            -var="db_username=dummy" \
+            -var="jwt_secret=dummy"
 
       - name: Get ECR Repository URL
         id: ecr_output
