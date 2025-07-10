@@ -42,8 +42,6 @@ public class WebSecurityConfig {
                 .authorizeExchange(exchanges -> exchanges
                         .pathMatchers(
                                 "/actuator/health",
-                                "/api/warehouses/**",
-                                "/api/inventory/**",
                                 "/api/customer-orders/**",
                                 "/api/distributed-orders/**",
                                 "/api/reserved-inventory/**",

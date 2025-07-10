@@ -8,124 +8,6 @@
       <change afterPath="$PROJECT_DIR$/../inventory-service/src/main/java/com/arka/inventory_service/infraestructure/adapter/driven/db/config/ObjectMapperConfig.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../inventory-service/src/main/java/com/arka/inventory_service/infraestructure/adapter/driven/db/config/PostgreSqlConnectionPool.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../inventory-service/src/main/resources/db/migration/V1__Init_RDS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/PurchaseServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/in/CompletePurchasePort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/in/StartPurchasePort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/CartCommandPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/CartQueryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/GeoLocationPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/InventoryQueryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/OrderEventPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/ProductQueryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/PurchasePersistencePort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/PurchaseQueryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/PurchaseStatusUpdatePort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/StripeCheckoutPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/ports/out/WarehouseQueryPort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/usecase/CompletePurchaseUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/application/usecase/StartPurchaseUseCase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/CartItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/GeoLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/InventoryStock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/ProductPrice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/Purchase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/PurchaseItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/PurchaseItemDistribution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/ShippingAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/domain/model/Warehouse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/dto/CartClearEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/rabbit/cart/CartCommandAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/rabbit/cart/CartRabbitConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/rabbit/inventory/adapter/OrderEventAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/rabbit/inventory/dto/OrderPlacedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/rabbit/inventory/mapper/OrderPlacedEventMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/cart/reactive/CartQueryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/geolocation/GeoLocationAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/inventory/InventoryQueryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/adapter/PurchasePersistenceAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/adapter/PurchaseQueryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/adapter/PurchaseStatusUpdateAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/config/ObjectMapperConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/config/PostgreSqlConnectionPool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/entity/PaymentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/entity/PurchaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/entity/PurchaseItemDistributionEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/entity/PurchaseItemEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/entity/ShippingAddressEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/mapper/PurchasePersistenceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/repository/PurchaseItemDistributionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/repository/PurchaseItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/repository/PurchaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/persistence/repository/ShippingAddressRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/product/ProductQueryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driven/warehouse/WarehouseQueryAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driver/rest/PurchaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/driver/rest/StripeWebhookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/security/JwtSecurityContextRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V1__Init_RDS.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/CartQueryAdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/CompletePurchaseUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/GeoLocationAdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/InventoryQueryAdapterIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/ProductQueryAdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/PurchasePersistenceAdapterIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/StartPurchaseUseCaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/arka/purchase_service/StripeCheckoutAdapterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/PurchaseServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/in/CompletePurchasePort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/in/StartPurchasePort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/CartCommandPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/CartQueryPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/GeoLocationPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/InventoryQueryPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/OrderEventPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/ProductQueryPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/PurchasePersistencePort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/PurchaseQueryPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/PurchaseStatusUpdatePort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/StripeCheckoutPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/ports/out/WarehouseQueryPort.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/usecase/CompletePurchaseUseCase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/application/usecase/StartPurchaseUseCase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/CartItem$CartItemBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/CartItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/GeoLocation$GeoLocationBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/GeoLocation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/InventoryStock$InventoryStockBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/InventoryStock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/ProductPrice$ProductPriceBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/ProductPrice.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/Purchase$PurchaseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/Purchase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/PurchaseItem$PurchaseItemBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/PurchaseItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/PurchaseItemDistribution$PurchaseItemDistributionBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/PurchaseItemDistribution.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/ShippingAddress$ShippingAddressBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/ShippingAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/Warehouse$WarehouseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/domain/model/Warehouse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/infraestructure/driven/persistence/entity/PaymentEntity$PaymentEntityBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/infraestructure/driven/persistence/entity/PaymentEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../autogestion-service/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../autogestion-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../autogestion-service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../autogestion-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../autogestion-service/src/main/resources/application.yml" afterDir="false" />
@@ -352,6 +234,13 @@
       <change beforePath="$PROJECT_DIR$/../inventory-service/target/classes/com/arka/inventory_service/infraestructure/adapter/driver/rest/mapper/WarehouseRestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-service/target/classes/com/arka/inventory_service/infraestructure/adapter/driver/rest/mapper/WarehouseRestMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../inventory-service/target/test-classes/com/arka/inventory_service/application/ports/usecase/DistributedOrderServiceImplGetGroupedDistributionsByOrderTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../inventory-service/target/test-classes/com/arka/inventory_service/application/ports/usecase/DistributedOrderServiceImplTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../inventory-service/target/test-classes/com/arka/inventory_service/application/ports/usecase/DistributedOrderServiceImplTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/arka/purchase_service/infraestructure/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/infraestructure/security/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/arka/purchase_service/infraestructure/security/WebSecurityConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/adapter/StockEventPublisherRabbitAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/adapter/StockEventPublisherRabbitAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/dto/StockItemDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/dto/StockItemDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/dto/StockReceivedEventDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../supplier-service/src/main/java/com/arka/supplier_service/infraestructure/adapters/driven/amqp/dto/StockReceivedEventDto.java" afterDir="false" />

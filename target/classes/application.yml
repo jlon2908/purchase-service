@@ -51,11 +51,17 @@ postgresql:
   password: LONque123*
   ssl: allow
 
-
-
-
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+  info:
+    env:
+      enabled: true
 
 catalog:
   base-url: http://arka-alb-1425980331.us-east-1.elb.amazonaws.com
